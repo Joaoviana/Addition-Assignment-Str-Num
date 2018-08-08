@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>op prec & boo</title>
+  <title>binary operators</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -16,13 +16,13 @@
 	<script src="scripts.js"></script>
 	<script src="trace-block.js"></script>
 
-	<!-- <h2> a || ((b > c) && (d >= e)) <h2> -->
+	<!-- <h2> (num += String(num += 1)) % 2; <h2> -->
 
 	<div class="navbar">
-	  <a>a ||</a>
-	  <a>( (b > c)</a>
-	  <a>&&</a>
-	  <a>(d >= e) )</a>
+	  <a>(num+=1 ||</a>
+	  <a>String(num)</a>
+	  <a>+=</a>
+	  <a>%2 )</a>
 	  <a href="../index.html" style="float:right">home</a>
 	</div>
 
@@ -32,21 +32,9 @@
 				<td>
 					Input:
 					<br>
-					 a:	<input type="text" value="type" id="a-type">
-						<input type="text" value="value" id="a-value">
+					 num:	<input type="text" value="type" id="num-type">
+						<input type="text" value="value" id="num-value">
 					<br>
-					 b:	<input type="text" value="type" id="b-type">
-						<input type="text" value="value" id="b-value">
-					<br>
-					 c:	<input type="text" value="type" id="c-type">
-						<input type="text" value="value" id="c-value">
-					<br>
-					 d:	<input type="text" value="type" id="d-type">
-						<input type="text" value="value" id="d-value">
-					<br>
-					 e:	<input type="text" value="type" id="e-type">
-						<input type="text" value="value" id="e-value">
-					<br>	
 					Expected:
 					<br>
 					<input type="text" value="type" id="expected-type">
@@ -71,7 +59,7 @@
 		  <tr>  <!-- 	o1    -->
 		    <td></td>
 		    <td></td> 
-		    <td id="o1">b > c;</td>
+		    <td id="o1">num+=1;</td>
 		  </tr>
 		  <tr>  <!-- 	s1    -->
 		    <td>step 1</td>
@@ -81,7 +69,7 @@
 		  <tr>  <!-- 	o2    -->
 		    <td></td>
 		    <td></td> 
-		    <td id="o2">d >= e;</td>
+		    <td id="o2">String(s1);</td>
 		  </tr>
 		  <tr>  <!-- 	s2    -->
 		    <td>step 2</td>
@@ -91,7 +79,7 @@
 		  <tr>  <!-- 	o3    -->
 		    <td></td>
 		    <td></td> 
-		    <td id="o3">s1 && s2;</td>
+		    <td id="o3">s1 += s2;</td>
 		  </tr>
 		  <tr>  <!-- 	s3    -->
 		    <td>step 3</td>
@@ -101,7 +89,7 @@
 		  <tr>  <!-- 	o4    -->
 		    <td></td>
 		    <td></td> 
-		    <td id="o4">a || s3;</td>
+		    <td id="o4">s3%2;</td>
 		  </tr>
 		  <tr>
 		    <td>final state</td>
