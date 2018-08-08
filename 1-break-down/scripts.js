@@ -1,35 +1,15 @@
-// a || ((b > c) && (d >= e))
+// (num += String(num += 1)) %2
 
 function trace() {
 	console.log("-----------------");
 
 	// read & clean user input
-	var a_type = document.getElementById("a-type").value;
-	var a_value = document.getElementById("a-value").value;
-	var a = cast(a_type, a_value);
-	
-	var b_type = document.getElementById("b-type").value;
-	var b_value = document.getElementById("b-value").value;
-	var b = cast(b_type, b_value);
-
-	var c_type = document.getElementById("c-type").value;
-	var c_value = document.getElementById("c-value").value;
-	var c = cast(c_type, c_value);
-	
-	var d_type = document.getElementById("d-type").value;
-	var d_value = document.getElementById("d-value").value;
-	var d = cast(d_type, d_value);
-	
-	var e_type = document.getElementById("e-type").value;
-	var e_value = document.getElementById("e-value").value;
-	var e = cast(e_type, e_value);
+	var num_type = document.getElementById("num-type").value;
+	var num_value = document.getElementById("num-value").value;
+	var num = cast(num_type, num_value);
 	
 	var s0 = {
-		a: {[a_type]: a},
-		b: {[b_type]: b},
-		c: {[c_type]: c},
-		d: {[d_type]: d},
-		e: {[e_type]: e}
+		num: {[num_type]: num}
 	};
 		
 	var expected_type = document.getElementById("expected-type").value;
@@ -40,28 +20,28 @@ function trace() {
 	// do the logic
 	var s1;
 	try {
-		s1 = b > c;
+		s1 = s0+=1;
 	} catch(err) {
 		throw(err);
 	};
 
 	var s2;
 	try {
-		s2 = d >= e;
+		s2 = String(s1);
 	} catch(err) {
 		throw(err);
 	};
 	
 	var s3;
 	try {
-		s3 = s1 && s2;
+		s3 = s1 += s2;
 	} catch(err) {
 		throw(err);
 	};
 
 	var sf;
 	try {
-		sf = a || s3;
+		sf = s3 % 2;
 	} catch(err) {
 		throw(err);
 	};
