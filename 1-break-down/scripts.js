@@ -20,7 +20,8 @@ function trace() {
 	// do the logic
 	var s1;
 	try {
-		s1 = s0+=1;
+		s0+=1;
+		s1 =s0;
 	} catch(err) {
 		throw(err);
 	};
@@ -34,7 +35,8 @@ function trace() {
 	
 	var s3;
 	try {
-		s3 = s1 += s2;
+		s1 += s2;
+		s3 = s1;
 	} catch(err) {
 		throw(err);
 	};
