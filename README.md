@@ -25,20 +25,13 @@ ___
 ## Study Snippet
 
 ```js
-// += (str), += (num), %
 let input = 0;
 (input += String(input += 1)) % 2;
-
-input+=1;
-//(Number, 1)
-String(1)
-//(String, '1')
-input += '1'
-//(String, '11')
-'11'%2
-//(Number, 1)
 ```
-Do note how the += operator 
+
+[Repl.it](https://repl.it/@Joaoviana/Binary-Operators)
+
+[PyTut](https://goo.gl/QWiBqf)
 
 [TOP](#index)
 
