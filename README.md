@@ -25,8 +25,18 @@ ___
 ## Study Snippet
 
 ```js
+// += (str), += (num), %
 let input = 0;
 (input += String(input += 1)) % 6;
+
+input+=1;
+//(Number, 1)
+String(1)
+//(String, '1')
+input += '1'
+//(String, '11')
+'11'%6
+//(Number, 5)
 ```
 
 [Repl.it](https://repl.it/@Joaoviana/Binary-Operators)
