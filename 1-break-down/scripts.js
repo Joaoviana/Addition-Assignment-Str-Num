@@ -20,8 +20,8 @@ function trace() {
 	// do the logic
 	var s1;
 	try {
-		s0+=1;
-		s1 =s0;
+		num+=1;
+		s1 =num;
 	} catch(err) {
 		throw(err);
 	};
