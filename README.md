@@ -1,6 +1,6 @@
 ## Binary-Operators
 
-this expression works with the binary assignment operator += with variable input, type casting and the assignment operator modulo of 2. 
+this expression works with the binary assignment operator += with variable input, type casting and the assignment operator modulo of 6. 
 
 
 ### Index
@@ -15,7 +15,7 @@ ___
 
 Language Features:
 * String();
-* += assignment operator;
+* += assignment operator with strings and numbers;
 * % arithmetic operator;
 
 [TOP](#index)
@@ -26,12 +26,12 @@ ___
 
 ```js
 let input = 0;
-(input += String(input += 1)) % 2;
+(input += String(input += 1)) % 6;
 ```
 
 [Repl.it](https://repl.it/@Joaoviana/Binary-Operators)
 
-[PyTut](https://goo.gl/QWiBqf)
+[PyTut](https://goo.gl/kZpftP)
 
 [TOP](#index)
 
