@@ -12,13 +12,15 @@ function trace() {
 		num: {[num_type]: num}
 	};
 		
-	var expected_type = document.getElementById("expected-type").value;
-	var expected_value = document.getElementById("expected-value").value;
-	var expected = cast(expected_type, expected_value);
 	
 	var expectedNum_type = document.getElementById("expectedNum-type").value;
 	var expectedNum_value = document.getElementById("expectedNum-value").value;
 	var expectedNum = cast(expectedNum_type,expectedNum_value);
+	
+	var expected_type = document.getElementById("expected-type").value;
+	var expected_value = document.getElementById("expected-value").value;
+	var expected = cast(expected_type, expected_value);
+	
 
 
 	// do the logic
