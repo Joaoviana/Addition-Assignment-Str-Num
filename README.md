@@ -1,4 +1,4 @@
-## Binary-Operators
+## Addition-Assignment-Str-Num
 
 this expression works with the binary assignment operator += with variable input, type casting and the assignment operator modulo of 6. 
 
