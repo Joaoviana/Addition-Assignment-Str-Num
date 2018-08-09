@@ -15,6 +15,10 @@ function trace() {
 	var expected_type = document.getElementById("expected-type").value;
 	var expected_value = document.getElementById("expected-value").value;
 	var expected = cast(expected_type, expected_value);
+	
+	var expectedNum_type = document.getElementById("expectedNum-type").value;
+	var expectedNum_value = document.getElementById("expectedNum-value").value;
+	var expectedNum = cast(expectedNum_type,expectedNum_value);
 
 
 	// do the logic
@@ -66,6 +70,7 @@ function trace() {
 	sf_display.innerHTML = typeof sf + ": " + sf;
 
 	console.assert(expected === sf, [{expected: expected}, {actual: sf}] );
+	console.assert(expectedNum === num, [{expectedNum: expected}, {actual: num}] );
 };
 
 function cast(type, value) {
