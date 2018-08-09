@@ -6,9 +6,8 @@ this expression works with the binary assignment operator += with variable input
 ### Index
 * [Learning Objective](#learning-objective)
 * [Study Snippet](#study-snippet)
+* [Practice Points](#practice-points)
 * [Helpful Links](#helpful-links)
-* [More Practice](https://elewa-academy.github.io/12345-345)
-
 ___
 
 ## Learning Objective
@@ -46,6 +45,14 @@ input += '1'
 [TOP](#index)
 
 ___
+
+## Practice Points:
+
+input += "1"; // when input is a number  
+%  
+strange: same output, even with top line uncommented  
+
+[TOP](#index)
 
 ## Helpful Links
 
