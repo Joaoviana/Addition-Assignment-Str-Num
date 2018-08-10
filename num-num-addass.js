@@ -1,6 +1,6 @@
 debugger;
 
-num_1 = 1;
+let num_1 = 1;
 let num_num;
 { // num_1 += 1;
   num_1 = num_1 + 1;
