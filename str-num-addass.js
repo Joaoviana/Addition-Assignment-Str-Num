@@ -7,6 +7,6 @@ let str_num;
   str_num = str_1
 
 };
-let actual = "1";
-actual += 1;
-console.assert(str_num === actual, "fail: str_num");
+let actual_str_num = "1";
+actual_str_num += 1;
+console.assert(str_num === actual_str_num, "fail: str_num");
