@@ -1,5 +1,4 @@
 //str_str
-debugger;
 
 let str_1 = "1";
 let str_str;
