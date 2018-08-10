@@ -8,6 +8,6 @@ let num_str;
   num_str = num_1;
 };
 
-let actual = 1;
-actual += "1";
-console.assert(num_str === actual, "fail: num_str");
+let actual_str_num = 1;
+actual_str_num += "1";
+console.assert(num_str === actual_str_num, "fail: num_str");
